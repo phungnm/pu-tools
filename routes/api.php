@@ -17,7 +17,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::prefix('baconheo')->group(function () {
+Route::prefix('baconheo')->middleware('cors')->group(function () {
 		// Lấy danh sách sản phẩm
 		Route::get('access', 'Api\baconheo\AccessController@index')->name('access.index');
 
