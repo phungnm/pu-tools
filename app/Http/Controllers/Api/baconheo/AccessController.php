@@ -21,7 +21,9 @@ class AccessController extends Controller
      */
     public function store(Request $request)
     {
-        return Access::create(["site"=>"baconheo","ip"=>$request->ip()]);
+        if($request->has('site')) $site = $request->site;
+        else $site ="baconheo"
+        return Access::create(["site"=>$site,"ip"=>$request->ip()]);
     }
 
     /**
