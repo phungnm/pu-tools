@@ -6,6 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Access extends Model
 {
-
-    protected $fillable = array('ip','site','created_at');
+    protected $fillable = array('ip','site');
 }
