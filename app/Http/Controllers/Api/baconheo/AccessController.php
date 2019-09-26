@@ -21,7 +21,9 @@ class AccessController extends Controller
      */
     public function store(Request $request)
     {
-        return Access::create(["site"=>"baconheo","ip"=>$request->ip()]);
+        date_default_timezone_set("Asia/Ho_Chi_Minh");
+        $time = new DateTime();
+        return Access::create(["site"=>"baconheo","ip"=>$request->ip(),"created_at"=>$time->format('Y-m-d H:i:sP')]);
     }
 
     /**
