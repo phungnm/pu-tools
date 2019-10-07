@@ -9,6 +9,6 @@ class AccessController extends Controller
 {
  	public function index()
     {
-          return view('baconheo.access.index', ['accesses' => Access::all()->sortByDesc('id')]);
+          return view('baconheo.access.index', ['accesses' => Access::all()->sortByDesc('id'),'title'=>"Baconheo tools",'active_menu'=>'baconheo','scripts'=>['baconheo_access.js']]);
     }
 }
