@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Access extends Model
 {
-    protected $fillable = array('ip','site');
+    protected $fillable = array('ip','site','path');
 }

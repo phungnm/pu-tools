@@ -17,7 +17,7 @@
               <tr>
                 <th>IP</th>
                 <th>Site</th>
-                <td>Path</td>
+                <th>Path</th>
                 <th>Time</th>
               </tr>
              
