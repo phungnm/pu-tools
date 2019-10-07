@@ -52,9 +52,9 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost/pu-tools'),
+    'url' => env('APP_URL', 'https://pu-tools.herokuapp'),
 
-    'asset_url' => env('ASSET_URL', 'http://localhost/pu-tools/public'),
+    'asset_url' => env('ASSET_URL', 'https://pu-tools.herokuapp/public'),
 
     /*
     |--------------------------------------------------------------------------
