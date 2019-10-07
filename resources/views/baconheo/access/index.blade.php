@@ -17,6 +17,7 @@
               <tr>
                 <th>IP</th>
                 <th>Site</th>
+                <td>Path</td>
                 <th>Time</th>
               </tr>
              
@@ -25,7 +26,9 @@
                     <tr>
                 <td>{{ $access->ip }}</td>
                 <td>{{ $access->site }}</td>
+                 <td>{{ $access->path }}</td>
                 <td>{{ $access->created_at }}</td>
+                 
               </tr>
         @endforeach
             </table>

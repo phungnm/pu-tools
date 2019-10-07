@@ -17,6 +17,7 @@ class CreateAccessesTable extends Migration
             $table->bigIncrements('id');
             $table->char('ip',20);
             $table->char('site',255);
+            $table->char('path',255);
             $table->timestamps();
         });
     }

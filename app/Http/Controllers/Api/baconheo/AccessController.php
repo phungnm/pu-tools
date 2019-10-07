@@ -23,9 +23,8 @@ class AccessController extends Controller
     {
         if($request->has('site')) $site = $request->site;
         else $site ="baconheo";
-        return Access::create(["site"=>$site,"ip"=>$request->ip()]);
+        return Access::create(["site"=>$site,"ip"=>$request->ip(),"path"=>$request->path]);
     }
-
     /**
      * Display the specified resource.
      *
